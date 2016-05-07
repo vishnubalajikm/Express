@@ -23,9 +23,9 @@ router.post('/ticket', function(req, res){
   card.userId = "HyBakhBFrMjJDMaDv";
   card.labelIds.push(PriorityMap[ticket.priority]);
   console.log(card);
-  // card.save(function(){
-  //   console.log("Saved");
-  // });
+  card.save(function(){
+    console.log("Saved");
+  });
   res.render('index');
 });
 
