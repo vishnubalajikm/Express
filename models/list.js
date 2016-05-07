@@ -6,9 +6,10 @@ var CardSchema = new Schema({
   title: {
     type: String,
   },
-  archived: { 
+  archived: {
     type: Boolean,
     optional: true,
+    default: false,
   },
   listId: {
     type: String,
@@ -29,10 +30,12 @@ var CardSchema = new Schema({
     type: Date,
     denyUpdate: true,
     optional: true,
+    default: Date.now(),
   },
   dateLastActivity: {
     type: Date,
     optional: true,
+    default: Date.now(),
   },
   description: {
     type: String,
@@ -56,6 +59,7 @@ var CardSchema = new Schema({
     type: Number,
     decimal: true,
     optional: true,
+    default: 0,
   },
     category: {
         type: String
