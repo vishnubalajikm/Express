@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var customId = require('mongoose-hook-custom-id');
 
 // User schema
 var CardSchema = new Schema({
@@ -71,5 +72,7 @@ var CardSchema = new Schema({
         type: Number
     }
 });
+
+CardSchema.plugin(customId, {mongoose: mongoose});
 
 module.exports = mongoose.model('cards', CardSchema);

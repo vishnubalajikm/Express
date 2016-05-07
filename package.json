@@ -18,6 +18,7 @@
     "express-flash": "0.0.2",
     "express-session": "^1.13.0",
     "mongoose": "^4.4.12",
+    "mongoose-hook-custom-id": "^0.1.4",
     "morgan": "^1.7.0",
     "nlp_compromise": "^4.10.5",
     "sentiment": "^1.0.6",
