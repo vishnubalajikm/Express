@@ -57,6 +57,15 @@ var CardSchema = new Schema({
     decimal: true,
     optional: true,
   },
+    category: {
+        type: String
+    },
+    sub_category: {
+        type: String
+    },
+    priority: {
+        type: Number
+    }
 });
 
 module.exports = mongoose.model('cards', CardSchema);

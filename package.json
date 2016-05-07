@@ -19,6 +19,8 @@
     "express-session": "^1.13.0",
     "mongoose": "^4.4.12",
     "morgan": "^1.7.0",
+    "nlp_compromise": "^4.10.5",
+    "sentiment": "^1.0.6",
     "session": "^0.1.0"
   }
 }
